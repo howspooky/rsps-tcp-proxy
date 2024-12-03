@@ -2,7 +2,7 @@ name: Buld Docker image and push to Dockerhub
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   Build:
     name: Build
