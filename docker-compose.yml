@@ -1,0 +1,14 @@
+services:
+  proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "43594:43594"
+    restart: always
+    container_name: proxy
+    environment:
+      - BIND_IP=0.0.0.0
+      - BIND_PORT=43594
+      - SERVER_IP=15.235.53.197
+      - SERVER_PORT=43594
